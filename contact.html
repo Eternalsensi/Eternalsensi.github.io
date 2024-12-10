@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <title>快联系我</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url("/dh713/image/contact.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 48px;" >快联系我!!!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="font-size: 36px;">主页</a></li>
+                <li><a href="jianjie.html" style="font-size: 36px;">个人简介</a></li>
+                <li><a href="hobbies.html" style="font-size: 36px;">兴趣爱好</a></li>
+                <li><a href="lixiang.html" style="font-size: 36px;">理想憧憬</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="color:yellow;">如何联系我</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> 
+                <p style="color: red;">电子邮箱：1793103466@qq.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i> <!-- 手机图标 -->
+                <p style="color: red;">手机号码：137****5490（想要自己来要喵）</p>
+            </div>
+        </div>
+
+        <!-- 可选的联系表单 -->
+        <h2 style="color: yellow;">给我留言（没做，只能看看）</h2>
+        <form action="submit.php" method="post"> 
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">留言内容：</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="发送留言">
+        </form>
+    </main>
+
+    <footer>
